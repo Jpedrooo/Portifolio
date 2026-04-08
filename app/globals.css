@@ -24,3 +24,43 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer components {
+  /* O fundo principal do site */
+  .container-principal {
+    @apply flex min-h-screen flex-col items-center justify-center p-24 bg-slate-950 text-white;
+  }
+
+  /* O container da seção de destaque */
+  .secao-hero {
+    @apply z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex flex-col text-center;
+  }
+
+  /* O círculo da sua foto de perfil */
+  .foto-perfil-circulo {
+    @apply relative w-40 h-40 rounded-full overflow-hidden border-4 border-slate-800 shadow-2xl shadow-blue-900/30;
+  }
+
+  /* O título principal com o efeito colorido */
+  .titulo-nome {
+    @apply text-6xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent;
+  }
+
+  /* O subtítulo da sua profissão */
+  .subtitulo-profissao {
+    @apply text-xl text-slate-400 mb-8 font-sans;
+  }
+
+  /* Botão principal de destaque */
+  .botao-primario {
+    @apply px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-full font-bold transition-all;
+  }
+
+  /* Botão secundário (contato) */
+  .botao-secundario {
+    @apply px-6 py-3 border border-slate-700 hover:bg-slate-800 rounded-full font-bold transition-all;
+  }
+
+
+}
+
